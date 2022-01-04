@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mi página de prueba</title>
+</head>
+<body>
+
+  <p>Mozilla es <strong>muy útil.</strong></p>
+  <img src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg " alt="Logo mozilla"  width="200" height="200" />
+
+    <head>
+        <meta charset="utf-8">
+        <title>Planeta</title>
+        <style>
+            #planeta {
+                position: absolute;
+                left: 0px;
+            }
+        </style>
+
+        </head>
+    <div>
+        <!-- planeta -->
+        <img id="planeta" src="https://assets.sutori.com/user-uploads/image/563480aa-36a1-4282-a77a-0c463a99f71d/1a671672b1c6d4173910338fe1ecfac2.gif" width="200" height="200" />
+    </div>
+     <script>
+   var planetaEl = document.getElementById("planeta");
+  
+  var startTime = new Date().getTime();
+  var planeta = function() {
+      var currTime = new Date().getTime();
+      var secondsElapsed = ((currTime - startTime)/1000);
+      var newLeft = secondsElapsed * 100;
+      planetaEl.style.left = newLeft + "px"; 
+      window.requestAnimationFrame(planeta);
+};
+  planeta();
+        </script>
+
+
+  <h1>¿Qué es Mozilla?</h1>
+  <h2>¿Cómo se utiliza?</h2>
+
+<p> En Mozilla somos uns comunidad de: </p>
+    <ul>
+      <li>tecnólogos</li>
+      <li>pensadores</li>
+      <li>constructores</li>
+    </ul>
+ 
+  <p>trabajando juntos para mantener vivo y accesible Internet para que las personas de todo el mundo puedan ser contribuyentes y creadores informados de la Web. Creemos que este acto de colaboración humana a través de una plataforma abierta es esencial para el crecimiento individual y nuestro futuro colectivo. </p>
+ 
+  <p>Lee el <a href="https://www.mozilla.org/en-US/about/manifesto/" target="_blank"> Mozilla Manifesto </a>para conocer aún más los valores y principios que guían la consecución de nuestra misión.
+
+    </p>
+    <button>Cambiar usuario </button>
+    <script src="scripts/main.js"></script>
+
+</html>
